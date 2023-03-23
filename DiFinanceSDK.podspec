@@ -29,13 +29,13 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://docs.konv.com.br/konv-api-publica/"
   spec.license      = "MIT"
   spec.author       = { "Diego Cavalcante Costa" => "cavalcante13.santos@gmail.com" }
-  spec.source       = { :git => 'git@github.com:cavalcante13/DiFinanceSDK.git', :tag => "#{spec.version}" }
+  spec.source       = { :git => 'https://github.com/cavalcante13/DiFinanceSDK.git', :tag => "#{spec.version}" }
 
   spec.platform     = :ios, "11.0"
   spec.requires_arc = true
   spec.swift_version = '5.0'
   spec.ios.deployment_target = '11.0'
-  spec.ios.vendored_frameworks = 'DiFinanceSDK/DiFinanceSDK.xcframework'
+  spec.ios.vendored_frameworks = 'DiFinanceSDK.xcframework'
 
   spec.framework  = "UIKit"
 
