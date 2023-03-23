@@ -29,7 +29,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://docs.konv.com.br/konv-api-publica/"
   spec.license      = "MIT"
   spec.author       = { "Diego Cavalcante Costa" => "cavalcante13.santos@gmail.com" }
-  spec.source       = { :git => 'https://github.com/cavalcante13/DiFinanceSDK.git', :tag => s.version.to_s }
+  spec.source       = { :git => 'https://github.com/cavalcante13/DiFinanceSDK.git', :tag => s.version }
 
   spec.platform     = :ios, "11.0"
   spec.requires_arc = true
