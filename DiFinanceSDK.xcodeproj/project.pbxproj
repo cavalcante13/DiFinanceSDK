@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A20AEC0BB42DC902FD2268 /* Pods_DiFinanceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E1B1FE303D0F93EBC942CC /* Pods_DiFinanceSDK.framework */; };
 		F13CAD5C29CCD897003D5B2D /* DiFinanceSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F13CAD5B29CCD897003D5B2D /* DiFinanceSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F13CAD6329CCD8A7003D5B2D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13CAD6229CCD8A7003D5B2D /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51B166A58115F7CC9CC0A862 /* Pods-DiFinanceSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiFinanceSDK.debug.xcconfig"; path = "Target Support Files/Pods-DiFinanceSDK/Pods-DiFinanceSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		C8E1B1FE303D0F93EBC942CC /* Pods_DiFinanceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiFinanceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDCAAAABEA769004C990A1AE /* Pods-DiFinanceSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiFinanceSDK.release.xcconfig"; path = "Target Support Files/Pods-DiFinanceSDK/Pods-DiFinanceSDK.release.xcconfig"; sourceTree = "<group>"; };
 		F13CAD5829CCD897003D5B2D /* DiFinanceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DiFinanceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13CAD5B29CCD897003D5B2D /* DiFinanceSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiFinanceSDK.h; sourceTree = "<group>"; };
 		F13CAD6229CCD8A7003D5B2D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -22,17 +26,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A20AEC0BB42DC902FD2268 /* Pods_DiFinanceSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		360B48A592BBC077CD898CB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51B166A58115F7CC9CC0A862 /* Pods-DiFinanceSDK.debug.xcconfig */,
+				DDCAAAABEA769004C990A1AE /* Pods-DiFinanceSDK.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A63B5A6712500462E31B678D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8E1B1FE303D0F93EBC942CC /* Pods_DiFinanceSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F13CAD4E29CCD896003D5B2D = {
 			isa = PBXGroup;
 			children = (
 				F13CAD5A29CCD897003D5B2D /* DiFinanceSDK */,
 				F13CAD5929CCD897003D5B2D /* Products */,
+				360B48A592BBC077CD898CB0 /* Pods */,
+				A63B5A6712500462E31B678D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F13CAD5F29CCD897003D5B2D /* Build configuration list for PBXNativeTarget "DiFinanceSDK" */;
 			buildPhases = (
+				AB2E7D595531B21F140DF3B1 /* [CP] Check Pods Manifest.lock */,
 				F13CAD5329CCD897003D5B2D /* Headers */,
 				F13CAD5429CCD897003D5B2D /* Sources */,
 				F13CAD5529CCD897003D5B2D /* Frameworks */,
@@ -127,6 +153,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB2E7D595531B21F140DF3B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiFinanceSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F13CAD5429CCD897003D5B2D /* Sources */ = {
@@ -262,6 +313,7 @@
 		};
 		F13CAD6029CCD897003D5B2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B166A58115F7CC9CC0A862 /* Pods-DiFinanceSDK.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -292,6 +344,7 @@
 		};
 		F13CAD6129CCD897003D5B2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDCAAAABEA769004C990A1AE /* Pods-DiFinanceSDK.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;

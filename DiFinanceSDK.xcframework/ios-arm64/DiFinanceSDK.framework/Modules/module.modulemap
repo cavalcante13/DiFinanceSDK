@@ -1,0 +1,11 @@
+framework module DiFinanceSDK {
+  umbrella header "DiFinanceSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module DiFinanceSDK.Swift {
+  header "DiFinanceSDK-Swift.h"
+  requires objc
+}
