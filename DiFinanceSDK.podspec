@@ -35,7 +35,7 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.swift_version = '5.0'
   spec.ios.deployment_target = '11.0'
-  spec.ios.vendored_frameworks = 'DiFinanceSDK/DiFinanceSDK/DiFinanceSDK.xcframework'
+  spec.ios.vendored_frameworks = 'DiFinanceSDK.xcframework'
 
   spec.framework  = "UIKit"
 
